@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/c159a44032.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/css/main.css">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <form action="" name="calc" class="container">
+            <div class="calc-body">
+                    <div class="calc-screen">
+                        <div class="calc-title">Daniels-not</div>
+                        <input type="textfield" value=""  autocomplete="off" readonly class="calc-typed" name="result"></input>
+                    </div>
+                    <div class="calc-button-row">
+                        <div class="button c" onclick="document.calc.result.value='';">C</div>
+                        <div class="button l" id="backspace">B</div>
+                        <div class="button l" onclick="document.calc.result.value+=' ** ';">^</div>
+                        <div class="button l" onclick="document.calc.result.value+=' / ';">/</div>
+                    </div>
+                    <div class="calc-button-row">
+                        <div class="button" onclick="document.calc.result.value+='7';">7</div>
+                        <div class="button" onclick="document.calc.result.value+='8';">8</div>
+                        <div class="button" onclick="document.calc.result.value+='9';">9</div>
+                        <div class="button l" onclick="document.calc.result.value+=' * ';">x</div>
+                    </div>
+                    <div class="calc-button-row">
+                        <div class="button" onclick="document.calc.result.value+='4';">4</div>
+                        <div class="button" onclick="document.calc.result.value+='5';">5</div>
+                        <div class="button" onclick="document.calc.result.value+='6';">6</div>
+                        <div class="button l" onclick="document.calc.result.value+=' - ';">−</div>
+                    </div>
+                    <div class="calc-button-row">
+                        <div class="button" onclick="document.calc.result.value+='1';">1</div>
+                        <div class="button" onclick="document.calc.result.value+='2';">2</div>
+                        <div class="button" onclick="document.calc.result.value+='3';">3</div>
+                    <div class="button l" onclick="document.calc.result.value+=' + ';">+</div>
+                    </div>
+                    <div class="calc-button-row">
+                        <div class="button" onclick="document.calc.result.value+='.';">.</div>
+                        <div class="button cero" onclick="document.calc.result.value+='0';">0</div>
+                        <div class="button l" id="equal">=</div>
+                        <button class="btn-history" id="historyLogs">History Logs</button>
+                    </div>
+                </div>
+            </form>
+        <script src="src/javascript/main.js"></script>
+    </body>
+</html>

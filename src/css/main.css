@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin-top: 2.5rem;
+    background: hsl(210, 5%, 92%);
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+}
+
+.calc-body {
+    width: 275px;
+    margin: auto;
+    min-height: 400px;
+    border: solid 1px hsl(213, 19%, 28%);
+    box-shadow: 0 8px 50px -7px black;
+}
+
+.calc-screen, input {
+    background: hsl(213, 19%, 28%);
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    height: 50%;
+    border: none;
+}
+
+input:active, input:focus {
+    border: none;
+}
+
+.calc-title {
+    text-align: right;
+    color: hsl(213, 8%, 49%);
+    font-size: 21px;
+    padding-bottom: 10px;
+    border-bottom: dotted 1px;
+}
+
+.calc-typed {
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: right;
+    color: #fff;
+}
+
+.calc-button-row {
+    width: 100%;
+    background: hsl(213, 18%, 29%);
+}
+
+.button {
+    width: 25%;
+    background: hsl(213, 18%, 29%);
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    border-right: solid 2px hsl(213, 18%, 29%);
+    border-bottom: solid 2px hsl(213, 18%, 29%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button.l {
+    color: #AEB3BA;
+    background: hsl(213, 18%, 29%);
+}
+
+.button.c {
+    color: hsl(245, 61%, 61%);
+    background: hsl(213, 18%, 29%);
+}
+
+#equal {
+    width: 50%;
+}
+
+.button:hover,
+.btn-history:hover {
+    background: #E0B612;
+}
+
+.button.c:hover,
+.button.l:hover,
+.btn-history:hover {
+    background: #E0B612;
+    color: #fff;
+}
+
+.btn-history {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    border: none;
+    color: hsl(245, 61%, 61%);
+    cursor: pointer;
+    background-color: hsl(213, 19%, 28%);
+    border-right: solid 2px hsl(213, 18%, 29%);
+    border-bottom: solid 2px hsl(213, 18%, 29%);
+    transition: all 0.2s ease-in-out;
+}
